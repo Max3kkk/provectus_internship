@@ -81,7 +81,7 @@ WHERE id NOT IN (
 SELECT id
 FROM users
 LEFT JOIN departments ON departments.user_id = users.id 
-   WHERE departments.department_id IS NULL OR departments.department_id != 1;
+WHERE departments.department_id IS NULL OR departments.department_id != 1;
 ```
 
 2. Write an SQL query to find all duplicate lastnames in a table named **user**
